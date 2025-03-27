@@ -22,7 +22,7 @@ def caesar_decrypt():
     key = int(data['key'])
     decrypted_text = caesar_cipher.decrypt_text(cipher_text, key)
     return jsonify({'decrypted_message': decrypted_text})
- 
+
     #VIGENERE CIPHER ALGORITHM
 vigenere_cipher = VigenereCipher()
 @app.route('/api/vigenere/encrypt', methods = ['POST'])
